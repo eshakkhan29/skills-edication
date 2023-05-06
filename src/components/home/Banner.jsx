@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import PrimaryBtn from "../common/PrimaryBtn";
+import BannerSlider from "./BannerSlider";
 
 const Banner = () => {
   return (
@@ -87,23 +88,9 @@ const Banner = () => {
       </div>
       {/* banner image */}
       <div className="relative">
-        <div className="w-[435px] h-[492px]">
-          <div className="w-full h-full relative">
-            <Image
-              className="object-cover"
-              priority
-              src="/images/hero.png"
-              fill
-              alt="site-logo"
-            ></Image>
-          </div>
-        </div>
-        <div className="mt-[33px] flex gap-x-[12px] items-center justify-center">
-          <div className="bg-[#DEDEDE] w-[8.5px] h-[8.5px] rounded-full cursor-pointer"></div>
-          <div className="bg-[#F66962] w-[10px] h-[10px] rounded-full cursor-pointer"></div>
-          <div className="bg-[#DEDEDE] w-[8.5px] h-[8.5px] rounded-full cursor-pointer"></div>
-        </div>
-        <div className="absolute bottom-[75px] -left-[58px] ps-[14px] pr-[30px] py-[10px] flex items-center gap-x-[15px] shadow-[0px_13px_31px_rgba(153,153,153,0.23)] bg-white rounded-[10px]">
+        <BannerSlider />
+        {/* banner Tag */}
+        <div className="absolute bottom-[120px] -left-[58px] ps-[14px] pr-[30px] py-[10px] flex items-center gap-x-[15px] shadow-[0px_13px_31px_rgba(153,153,153,0.23)] bg-white rounded-[10px]">
           <div className="w-[27px] h-[27px]">
             <div className="w-full h-full relative">
               <Image
